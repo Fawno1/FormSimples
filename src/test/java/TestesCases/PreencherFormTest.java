@@ -11,12 +11,13 @@ public class PreencherFormTest extends BaseTestFw {
 
     private WebDriver driver = this.getDriver();
 
-    @Test
-    public void popularForm() throws InterruptedException {
+	@Test
+	public void popularForm() throws InterruptedException {
+		
+		HomeTask home = new HomeTask(driver);
+		
+		home.verificaHome();
+		home.preencheFormulario();
 
-        HomeTask home = new HomeTask(driver);
-
-        home.verificaHome();
-
-    }
+	}
 }
